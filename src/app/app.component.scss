@@ -1,0 +1,18 @@
+#nav{
+  position: absolute;
+  display: block;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 1;
+}
+
+#main{
+  position: absolute;
+  display: block;
+  top:75px;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 0;
+}

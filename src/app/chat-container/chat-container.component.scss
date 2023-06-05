@@ -1,0 +1,67 @@
+
+$youColor: #d7adb8;
+$themColor: #c8c89a;
+$padding: 16px;
+$maxMessageWidth: 70%; // Adjust this value to control the max width of the messages
+
+#messageArea{
+    position: absolute;
+    box-sizing: border-box;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:75px;
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #DDD;
+}
+
+#messages {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 2000px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.message-wrapper {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: $padding / 2;
+}
+
+.message {
+  display: inline-block;
+  padding: $padding;
+  border-radius: 10px;
+  background-color: $youColor;
+  max-width: $maxMessageWidth;
+  word-wrap: break-word;
+  border-radius: 10px 10px 10px 2px;
+  white-space: pre-wrap;
+  text-align : left;
+}
+
+#messages > div:nth-child(even) .message {
+  background-color: $themColor;
+  border-radius: 10px 10px 2px 10px;
+}
+
+#messages > div:nth-child(even) .message-wrapper {
+  float: right;
+  text-align: right;
+}
+
+#promptArea{
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    bottom:50px;
+    left: 0;
+    padding: 0 15% 10px 10%;
+}

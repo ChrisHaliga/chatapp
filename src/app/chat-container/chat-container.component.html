@@ -1,0 +1,11 @@
+<div id="messageArea" class="row justify-content-md-center">
+    <div id="messages" class="col-8">
+      <div *ngFor="let message of messages; trackBy: messageTrackBy">
+        <div class="message-wrapper">
+          <div class="message">{{ message.content }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="promptArea"><app-text-input (userInput)="consumeUserInput($event)"></app-text-input></div>

@@ -1,0 +1,7 @@
+<div id="textInput" class="input-group">
+    <div id="textInputBar">
+        <input #promptInput type="text" name="prompt-input" ng-model="promptInput" placeholder="Send a message..." (keyup.enter)="submitUserInput(promptInput)">
+    </div>
+    <button (click)="submitUserInput(promptInput)"><i class="fa-solid fa-paper-plane"></i></button>
+</div>
+
